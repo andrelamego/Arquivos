@@ -12,8 +12,8 @@ public class Principal {
 		Pilha pilha = new Pilha();
 		Lista lista = new Lista();
 		
-		String path = "";
-		String name = "";
+		String path = "C:\\TEMP";
+		String name = "data.csv";
 		
 		try {
 			pilha = fifaC.empilhaBrasileiros(path, name);

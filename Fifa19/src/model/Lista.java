@@ -9,21 +9,21 @@ public class Lista {
 		return inicio;
 	}
 	
-	// INSERT
+	// append
 	
-	public void insert(String elemento) {
+	public void append(String elemento) {
 		NoLista<String> novo = new NoLista<>(elemento);
 		
 		if(inicio == null)
 			this.inicio = novo;
 		else
-			insert(novo, inicio);
+			append(novo, inicio);
 	}
 	
-	private void insert(NoLista<String> novo, NoLista<String> atual) {
+	private void append(NoLista<String> novo, NoLista<String> atual) {
 		if(atual.getProximo() == null)
 			atual.setProximo(novo);
 		else
-			insert(novo, atual.getProximo());
+			append(novo, atual.getProximo());
 	}
 }

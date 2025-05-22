@@ -5,7 +5,6 @@ public class NoLista<String> {
 	private NoLista<String> proximo;
 	
 	public NoLista(String valor) {
-		super();
 		this.setValor(valor);
 	}
 
